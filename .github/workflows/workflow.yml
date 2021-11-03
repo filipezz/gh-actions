@@ -25,9 +25,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-
-      uses: @cumulusds@v0.0.0
-      with:
-        file: specs.yml
-        credentials: env.SOME_CREDENTIALS
-        run: echo credentials 
+      - name: Run a one-line script
+        uses: @cumulusds@v0.0.0
+        with:
+          file: specs.yml
+          credentials: env.SOME_CREDENTIALS
+          run: echo credentials 
