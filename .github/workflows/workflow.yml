@@ -12,13 +12,11 @@ on:
 
 jobs:
   env: 
-    ENVIRONMENT: ${file(../specs.json)}
+    ASBABA: ${file(../specs.json)}
   build:
  
-    runs-on: ubuntu-latest
     steps:
-    
       - name: Run a one-line script
-        run: echo "${ENVIRONMENT}"
+        run: echo "${ASBABA}"
 
 
