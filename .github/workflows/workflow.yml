@@ -24,6 +24,6 @@ jobs:
           ENVIRONMENT: ${file(../specs.json)}
       
       - name: Run a one-line script
-        run: echo ${ENVIRONMENT}
+        run: echo "${ENVIRONMENT}"
 
 
