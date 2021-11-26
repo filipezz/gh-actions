@@ -11,6 +11,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  env: 
+    ASBABA: ${file(../specs.json)}
 
   build:
  
@@ -20,10 +22,8 @@ jobs:
     steps:
 
       - uses: actions/checkout@v2
-        env: 
-          ENVIRONMENT: ${file(../specs.json)}
       
       - name: Run a one-line script
-        run: echo "${ENVIRONMENT}"
+        run: echo "${ASBABA}"
 
 
